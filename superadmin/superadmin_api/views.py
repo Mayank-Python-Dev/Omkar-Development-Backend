@@ -3104,6 +3104,7 @@ class DashboardRentalNotificationView(APIView):
 
 
 class LeaveRequestView(APIView):
+    
     def get(self, request,leave_request_uid = None,*args,**kwargs):
         try:
             token = request.META.get('HTTP_AUTHORIZATION', " ").split(' ')[1]
